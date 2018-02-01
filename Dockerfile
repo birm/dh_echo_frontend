@@ -1,5 +1,4 @@
 FROM node
-ARG node_url
 WORKDIR "/app"
 COPY package*.json ./
 COPY . .
