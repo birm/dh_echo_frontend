@@ -6,6 +6,6 @@ apt-get install -y nodejs
 npm install
 
 # set api url
-sed -i "s/original/$API_URL/g" index.html
+sed -i "s/SOMETHING_TO_BE_REPLACED_IN_BUILD/$API_URL/g" index.html
 # run
 nodejs index.js &&
