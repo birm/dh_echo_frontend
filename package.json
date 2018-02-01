@@ -1,0 +1,22 @@
+{
+  "name": "dh_echo_frontend",
+  "version": "1.0.0",
+  "description": "Simple app for testing dh",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/birm/dh_echo_frontend.git"
+  },
+  "author": "birm@rbirm.us",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/birm/dh_echo_frontend/issues"
+  },
+  "homepage": "https://github.com/birm/dh_echo_frontend#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}

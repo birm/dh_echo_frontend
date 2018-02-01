@@ -1,0 +1,33 @@
+<html>
+<form id="echo">
+    <input id="value"></input>
+    <input id="set_btn" type="button">Set</input>
+    <input id="get_btn" type="button">Get</input>
+</form>
+<script>
+var API_URL_BASE = "SOMETHING_TO_BE_REPLACED_IN_BUILD";
+var SERVICE = "echo";
+function set_fcn(){
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+           console.log("Set it!")
+        }
+    };
+    xhttp.open("POST", API_URL_BASE+"/"+SERVICE+"/get", true);
+    xhttp.send({value: document.getElementById("value").value});
+}
+function get_fcn(){
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+           document.getElementById("value").value = this.responseText;
+        }
+    };
+    xhttp.open("POST", API_URL_BASE+"/"+SERVICE+"/get", true);
+    xhttp.send();
+}
+document.getElementById("set_btn").onclick = set_fcn
+document.getElementById("get_btn").onclick = set_fcn
+</script>
+</html>
