@@ -1,2 +1,2 @@
-# dh_echo_frontend
-Simple Frontend for dh echo (sample app)
+# ensign_demo_frontend
+Simple Frontend for ensign's demo "echo" application (sample app)
